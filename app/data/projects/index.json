@@ -51,6 +51,14 @@
     {
       "id": "RevitSamples",
       "name": "Revit Samples"
+    },
+    {
+      "id": "mbir",
+      "name": "mbir"
+    },
+    {
+      "id": "simple",
+      "name": "simple"
     }
   ]
 }
