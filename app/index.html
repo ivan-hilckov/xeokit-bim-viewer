@@ -8,7 +8,7 @@
     <title>xeokit BIM Viewer</title>
 
     <link rel="stylesheet" href="/lib/fontawesome-free-5.11.2-web/css/all.min.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="/dist/xeokit-bim-viewer.css" type="text/css" /> -->
+    <link rel="stylesheet" href="/css/xeokit-bim-viewer.css" type="text/css" />
     <link rel="stylesheet" href="/css/style.css" />
 </head>
 
@@ -34,10 +34,8 @@
 <script src="./lib/tippy.js"></script>
 
 <script type="module">
-
-    import { Server, BIMViewer, LocaleService } from "../dist/xeokit-bim-viewer.es.js";
-
-    import { messages as localeMessages } from "../dist/messages.js";
+    import { Server, BIMViewer, LocaleService } from "/dist/xeokit-bim-viewer.es.js";
+    import { messages as localeMessages } from "/dist/messages.js";
 
     window.onload = function () {
 
