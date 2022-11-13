@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  height: 100%;
+  font-family: var(--base-font);
+  font-size: var(--base-text-size);
+}
+
+body {
+  min-height: 100%;
+
+  background-color: var(--white);
+  box-sizing: border-box;
+  color: var(--cloudy-blue);
+  font-family: var(--base-font);
+
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+}
+
+.bar {
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 0 rgb(128 145 192 / 25%),
+    -2px 0 4px 0 rgb(128 145 192 / 25%);
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  /* grid-template-columns: 285px 1fr 285px; */
+  grid-template-columns: 285px 1fr 0;
+  /* grid-template-columns: 0px 1fr 0; */
+}
+
+.bar {
+  position: relative;
+  z-index: 3;
+  background-color: #fff;
+  box-shadow: 2px 2px 4px 0 rgb(128 145 192 / 25%),
+    -2px 0 4px 0 rgb(128 145 192 / 25%);
+}
+
+.toolbar {
+  top: 0;
+  position: absolute;
+  z-index: 5;
+}
+
+.viewer {
+  position: relative;
+  overflow: hidden;
+  /* 
+  width: 100%;
+  height: 100vh; */
+}
+
+.scene {
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  /* display: none; */
+}
+
+.cube {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  z-index: 5;
+}
+
+.side {
+}
+
+.tab-label-list {
+  display: flex;
+  height: 40px;
+  background-color: var(--pale-grey-two);
+}
+
+.tab-label {
+  height: 40px;
+  display: flex;
+  padding: 0 10px;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--base-text-size);
+  font-family: var(--base-font);
+  color: var(--slate-blue);
+  cursor: pointer;
+}
+
+.tab-label_active {
+  background-color: var(--white);
+}
+
+/* This is extend xeokit css */
+.xeokit-camera-pivot-marker {
+  bottom: 0;
+  left: 0;
+}
+
+.xeokit-tabs .xeokit-tab-content {
+  padding: 15px;
+  width: 100%;
+}
+
+.xeokit-tabs .xeokit-tab.active .xeokit-tab-btn {
+  border-bottom: none;
+  background: var(--white);
+}
+
+.xeokit-context-menu ul li {
+  width: 100%;
+}
+
+.xeokit-tabs .xeokit-tab-btn {
+  display: none;
+}
