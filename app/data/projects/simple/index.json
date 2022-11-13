@@ -8,6 +8,13 @@
       "saoEnabled": true,
       "pbrEnabled": true,
       "edges": true
+    },
+    {
+      "id": "part",
+      "name": "part",
+      "saoEnabled": true,
+      "pbrEnabled": true,
+      "edges": true
     }
   ],
   "viewerConfigs": {
@@ -15,7 +22,7 @@
     "backgroundColor": [0.95, 0.95, 1.0]
   },
   "viewerContent": {
-    "modelsLoaded": ["design"]
+    "modelsLoaded": ["design", "part"]
   },
   "viewerState": {
     "viewCubeEnabled": true,

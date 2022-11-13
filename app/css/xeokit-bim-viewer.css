@@ -47,7 +47,7 @@
 
 .xeokit-btn.active {
   color: #fff;
-  background-color: #03103f;
+  background-color: #fff;
   border-color: #03103f !important;
 }
 
@@ -163,7 +163,7 @@
 }
 
 .xeokit-tabs .xeokit-tab-content {
-  background: #03103f;
+  background: #fff;
   display: none;
   padding-top: 2em;
   padding-left: 0;
@@ -232,7 +232,7 @@
 .xeokit-modelsTab .xeokit-form-check span {
   display: inline-block;
   color: #ffff;
-  background-color: #03103f;
+  background-color: #fff;
   padding-left: 3px;
   width: calc(100% - 30px);
   vertical-align: middle;
@@ -240,7 +240,7 @@
 
 .xeokit-modelsTab .xeokit-form-check span.disabled {
   color: #99a4ad;
-  background-color: #03103f;
+  background-color: #fff;
 }
 
 .xeokit-modelsTab .xeokit-form-check span:hover {
@@ -252,7 +252,7 @@
 
 .xeokit-modelsTab .xeokit-form-check span.disabled:hover {
   color: #99a4ad;
-  background-color: #03103f;
+  background-color: #fff;
   cursor: default;
 }
 
@@ -947,7 +947,7 @@
 
 .xeokit-propertiesTab .panel {
   padding: 0 18px;
-  background: #03103f;
+  background: #fff;
   color: #cfcfcf;
   max-height: 0;
   overflow: hidden;

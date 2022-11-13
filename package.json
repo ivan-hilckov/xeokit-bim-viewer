@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": " rollup -c; cp locales/messages.js ./dist/.",
+    "build": "rollup -c; cp locales/messages.js ./app/dist/.; cp dist/xeokit-bim-viewer.css ./app/css/.",
+    "watch": "rollup -c -w",
     "docs": "./node_modules/.bin/esdoc",
     "publish": "npm publish --access public"
   },

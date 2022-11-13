@@ -5,37 +5,40 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>xeokit BIM Viewer</title>
+    <title>xeokit BIM Viewer (skyeer)</title>
 
-    <link rel="stylesheet" href="/lib/fontawesome-free-5.11.2-web/css/all.min.css" type="text/css" />
-    <link rel="stylesheet" href="/css/xeokit-bim-viewer.css" type="text/css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="lib/fontawesome-free-5.11.2-web/css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/xeokit-bim-viewer.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="/css/style.css" /> -->
+    <link rel="stylesheet" href="css/tempalte.css" />
 </head>
 
 <body>
-    <input type="checkbox" id="explorer_toggle" />
-    <label for="explorer_toggle" class="xeokit-i18n explorer_toggle_label xeokit-btn fas fa-2x fa-sitemap"
-        data-xeokit-i18ntip="toolbar.toggleExplorer" data-tippy-content="Toggle explorer"></label>
-    <input type="checkbox" id="inspector_toggle" />
-    <label id="inspector_toggle_label" for="inspector_toggle"
-        class="xeokit-i18n inspector_toggle_label xeokit-btn fas fa-info-circle fa-2x"
-        data-xeokit-i18ntip="toolbar.toggleProperties" data-tippy-content="Toggle properties"></label>
-    <div id="myExplorer"></div>
-    <div id="myToolbar"></div>
-    <div id="myInspector"></div>
-    <div id="myViewer">
-        <canvas id="myCanvas"></canvas>
-        <canvas id="myNavCubeCanvas"></canvas>
+    <div class="grid">
+        <div class="bar" id="myExplorer"></div>
+        <div class="viewer" id="myViewer">
+            <div class="toolbar" id="myToolbar"></div>
+            <canvas class="scene" id="myCanvas"></canvas>
+            <canvas class="cube" id="myNavCubeCanvas"></canvas>
+        </div>
+        <div class="bar" id="myInspector"></div>
     </div>
 </body>
 
 <!-- Tooltips libraries -->
-<script src="./lib/popper.js"></script>
-<script src="./lib/tippy.js"></script>
+<script src="lib/popper.js"></script>
+<script src="lib/tippy.js"></script>
 
 <script type="module">
-    import { Server, BIMViewer, LocaleService } from "/dist/xeokit-bim-viewer.es.js";
-    import { messages as localeMessages } from "/dist/messages.js";
+    import { Server, BIMViewer, LocaleService } from "./dist/xeokit-bim-viewer.es.js";
+    import { messages as localeMessages } from "./dist/messages.js";
 
     window.onload = function () {
 
